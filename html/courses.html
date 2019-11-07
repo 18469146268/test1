@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>课程表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../icon/icon_Bootstrap_title.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/courses.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <script src="../js/exitApp.js"></script>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <!--导航条-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <img src="../icon/icon_Bootstrap_logo.png" alt="">
+            <span class="text-light ml-3">课程表</span>
+            <!--移动端导航栏隐藏显示按钮-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--导航链接-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classification.html">分类</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">课程表</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my.html">我的</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-info rounded-0">
+                    <a href="#" class="text-white">免费注册</a>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <!--今日学习-->
+            <div class="">
+                <br>
+                <span class="today-font">今天学习</span>
+                <div class="clearfix">
+                    <div class="float-left">
+                        <span class="minute-font">0</span>
+                        <span>分钟</span>
+                        <span>|</span>
+                        <span>赶紧上课吧！</span>
+                    </div>
+                    <div class="float-right">
+                        <button type="button" class="btn btn-info">时长兑换奖励</button>
+                    </div>
+                </div>
+                <!--分割线-->
+                <div class="parting_line"></div>
+            </div>
+            <!--提示-->
+            <div class="mt-2 hint-box text-center">
+                <div class="mt-1 mb-1">1+X证书制度试点培训</div>
+            </div>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-sm-4 border mb-3 box-shadow border-top-0 border-left-0 border-right-0"
+                        data-toggle="modal" data-target="#100">
+                        <div class="row mt-2">
+                            <!--图标-->
+                            <div class="col-4 mb-2 text-center m-auto">
+                                <img src="../img/img_A1.png">
+                            </div>
+                            <!--介绍-->
+                            <div class="col-8 mb-2">
+                                <strong class="text-dark introduce">Web前端开发—初级（上册）</strong>
+                                <span class="defined-font introduce">
+                                    工业和信息化人才培养工程系列丛书、1+X证书制度试点培训用书
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 模态框 100-->
+                    <div class="modal fade" id="100">
+                        <div class="modal-dialog modal-dialog-centered text-dark">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span>Web前端开发—初级（上册）</span>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <button type="button" class="btn btn-outline-info">
+                                        <a href="course_textBookInstanceCatalogue.html">教材解析</a>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-info">
+                                        <a href="course_SimulationItemCatalogue.html">模拟试题</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 border mb-3 box-shadow border-top-0 border-left-0 border-right-0">
+                        <a href="#">
+                            <div class="row mt-2">
+                                <!--图标-->
+                                <div class="col-4 mb-2 text-center m-auto">
+                                    <img src="../img/img_A2.png">
+                                </div>
+                                <!--介绍-->
+                                <div class="col-8 mb-2">
+                                    <strong class="text-dark introduce">Web前端开发—初级（下册）</strong>
+                                    <span class="defined-font introduce">
+                                        工业和信息化人才培养工程系列丛书、1+X证书制度试点培训用书
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 border mb-3 box-shadow border-top-0 border-left-0 border-right-0">
+                        <a href="#">
+                            <div class="row mt-2">
+                                <!--图标-->
+                                <div class="col-4 mb-2 text-center m-auto">
+                                    <img src="../img/img_B2.png">
+                                </div>
+                                <!--介绍-->
+                                <div class="col-8 mb-2">
+                                    <strong class="text-dark introduce">Web前端开发—中级（上册）</strong>
+                                    <span class="defined-font introduce">
+                                        工业和信息化人才培养工程系列丛书、1+X证书制度试点培训用书
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 border mb-3 box-shadow border-top-0 border-left-0 border-right-0">
+                        <a href="#">
+                            <div class="row mt-2">
+                                <!--图标-->
+                                <div class="col-4 mb-2 text-center m-auto">
+                                    <img src="../img/img_B1.png">
+                                </div>
+                                <!--介绍-->
+                                <div class="col-8 mb-2">
+                                    <strong class="text-dark introduce">Web前端开发—中级（下册）</strong>
+                                    <span class="defined-font introduce">
+                                        工业和信息化人才培养工程系列丛书、1+X证书制度试点培训用书
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 border mb-3 box-shadow border-top-0 border-left-0 border-right-0">
+                        <!--W3cschool-->
+                        <a href="#">
+                            <div class="row mt-2">
+                                <!--图标-->
+                                <div class="col-4 mb-2 text-center m-auto">
+                                    <img src="../img/img_C1.png">
+                                </div>
+                                <!--介绍-->
+                                <div class="col-8 mb-2">
+                                    <strong class="text-dark introduce">Web前端开发—高级（上册）</strong>
+                                    <span class="defined-font introduce">
+                                        工业和信息化人才培养工程系列丛书、1+X证书制度试点培训用书
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 border mb-3 box-shadow border-top-0 border-left-0 border-right-0">
+                        <a href="#">
+                            <div class="row mt-2">
+                                <!--图标-->
+                                <div class="col-4 mb-2 text-center m-auto">
+                                    <img src="../img/img_C2.png">
+                                </div>
+                                <!--介绍-->
+                                <div class="col-8 mb-2">
+                                    <strong class="text-dark introduce">Web前端开发—高级（下册）</strong>
+                                    <span class="defined-font introduce">
+                                        工业和信息化人才培养工程系列丛书、1+X证书制度试点培训用书
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--返回顶部按钮-->
+            <div id="gotop">
+                <div class="border bg-white">
+                    <img src="../icon/icon-go-top2.png">
+                </div>
+            </div>
+            <!---->
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer class="fixed-bottom nav-justified fonter-border bg-white footer-hidden" id="one">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="../index.html">
+                    <span><img src="../icon/icon_index.png" alt=""></span><br>
+                    <span class="footer-text">首页</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="classification.html">
+                    <span><img src="../icon/icon_classification.png" alt=""></span><br>
+                    <span class="footer-text">分类</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="courses.html">
+                    <span><img src="../icon/icon_courses_active.png" alt=""></span><br>
+                    <span class="footer-text-active">课程表</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="my.html">
+                    <span><img src="../icon/icon_my.png" alt=""></span><br>
+                    <span class="footer-text">我的</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="../js/all.js"></script>
+    <!-- jQuery文件-->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <!-- 用于弹窗、提示、下拉菜单 -->
+    <script src="../js/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

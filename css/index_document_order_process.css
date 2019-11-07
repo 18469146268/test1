@@ -1,0 +1,15 @@
+a:hover {
+    text-decoration: none;
+}
+
+.bg-defined {
+    background: #122e3a;
+}
+
+.bg-defined:hover {
+    background: #21556b;
+}
+/*行内元素*/
+.inline_elements {
+    display: inline-block;
+  }

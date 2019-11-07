@@ -1,0 +1,32 @@
+/*输入框*/
+.input-defined {
+    height: 45px;
+}
+
+.bg-eee {
+    background-color: #eeeeee;
+}
+
+.bg-gradual {
+    background-image: linear-gradient(50deg, #43cea2, #185a9d);
+}
+
+/*状态码分类、搜索结果、搜索错误：默认不可见*/
+#classify-hide,#search-hide,#search-error-hide{
+    display: none;
+}
+.http-Num {
+    font-size: 3rem;
+}
+
+.http-En {
+    font-size: 2rem;
+}
+
+.http-Ch {
+    font-size: 1.2rem;
+    text-indent: 2em;
+}
+.http-search-hint {
+    font-size: 1.6rem;
+}

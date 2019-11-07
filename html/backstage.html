@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>后台管理</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../icon/icon_Bootstrap_title.png">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../layui/css/layui.css">
+  <script src="../js/exitApp.js"></script>
+  <style>
+    a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body class="layui-layout-body">
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <div class="layui-logo">后台数据管理</div>
+      <!-- 头部区域（可配合layui已有的水平导航） -->
+      <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item"><a href="">控制台</a></li>
+        <li class="layui-nav-item"><a href="">MENU1</a></li>
+        <li class="layui-nav-item"><a href="">MENU2</a></li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">其它系统</a>
+          <dl class="layui-nav-child">
+            <dd><a href="">邮件管理</a></dd>
+            <dd><a href="">消息管理</a></dd>
+            <dd><a href="">授权管理</a></dd>
+          </dl>
+        </li>
+      </ul>
+      <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item">
+          <a href="javascript:;">
+            <img src="../icon/icon_header.png" class="layui-nav-img">
+            伊一
+          </a>
+          <dl class="layui-nav-child">
+            <dd><a href="">基本资料</a></dd>
+            <dd><a href="">安全设置</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="../index.html">退出登录</a></li>
+      </ul>
+    </div>
+
+    <div class="layui-side layui-bg-black">
+      <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+          <li class="layui-nav-item">
+            <a href="#v-pills-home" id="v-pills-home-tab" aria-controls="v-pills-home" aria-selected="true">问卷星</a>
+          </li>
+          <li class="layui-nav-item">
+            <a href="#v-pills-profile" id="v-pills-profile-tab" aria-controls="v-pills-home"
+              aria-selected="true">APICloud</a>
+          </li>
+          <li class="layui-nav-item">
+            <a href="#v-pills-profile2" id="v-pills-profile2-tab" aria-controls="v-pills-home"
+              aria-selected="true">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="layui-body">
+      <!-- 内容主体区域 -->
+      <div class="container mt-4" id="v-pills-home" aria-labelledby="v-pills-home-tab">
+        <iframe src="https://www.wjx.cn/newwjx/manage/myquestionnaires.aspx?randomt=1572792857" width="100%"
+          height="500px"></iframe>
+      </div>
+      <div class="container mt-4" id="v-pills-profile" aria-labelledby="v-pills-profile-tab">
+        <iframe src="https://www.apicloud.com/appoverview" width="100%" height="500px"></iframe>
+      </div>
+      <div class="container mt-4" id="v-pills-profile2" aria-labelledby="v-pills-profile2-tab">
+        <iframe src="https://github.com/" width="100%" height="500px"></iframe>
+      </div>
+    </div>
+
+    <div class="layui-footer">
+      <!-- 底部固定区域 -->
+      © 一小只伊一 2019.11.01
+    </div>
+  </div>
+  <script src="layui/layui.js"></script>
+  <script>
+    //JavaScript代码区域
+    layui.use('element', function () {
+      var element = layui.element;
+
+    });
+  </script>
+  <!-- jQuery文件-->
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <!-- 用于弹窗、提示、下拉菜单 -->
+  <script src="../js/popper.min.js"></script>
+  <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+    background-color: #eee;
+}
+
+/*轮播图尺寸*/
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+/*简历、PPT、排版*/
+.bg-defined {
+    background: #122e3a;
+}
+
+.bg-defined:hover {
+    background: #21556b;
+}
+
+/*标题背景*/
+.bg-defined2 {
+    background-image: linear-gradient(50deg, #43cea2, #185a9d);
+}
+
+/*简历模板鼠标悬停阴影*/
+.bg-defined3:hover {
+    background: #fff;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 4px 16px #000;
+}
+
+/*先隐藏【详情】、【下载】按钮*/
+.btn_hide {
+    display: none;
+}

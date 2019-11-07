@@ -1,0 +1,35 @@
+body{
+    height:700px;
+    background-image: linear-gradient(50deg, #ffa17f, #00223e);
+}
+.div_login{
+    max-width:300px;
+}
+.input-defined{
+    border: none;
+    outline: none;
+    color: #b3b3b3;
+}
+.font-defined{
+    color: #666666;
+}
+
+.btn-login{
+    background-color: #f23a3a;
+    border:none;
+    width:100%;
+    height:35px;
+}
+.btn-register{
+    background-color: #ffffff;
+    color: #666666;
+    border: 1px solid #dcdcdc;
+    width:100%;
+    height:35px;
+}
+.btn-register:hover{
+    background-color: #f7f7f7;
+}
+.font-other-login{
+   font-size:0.9rem;
+}

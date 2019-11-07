@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>帮助与反馈</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../icon/icon_Bootstrap_title.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <!--layui——评分-->
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../layui/layui.js"></script>
+    <script src="../js/exitApp.js"></script>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <!--导航条-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a href="my.html">
+                <img src="../icon/icon_return.png" alt="">
+            </a>
+            <span class="text-light ml-3">帮助与反馈</span>
+            <!--移动端导航栏隐藏显示按钮-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--导航链接-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <br>
+            <div class="text-center mt-5">
+                <span>初次评价</span>
+                <!--分割线-->
+                <div class="parting_line mt-2"></div>
+                <div id="test1"></div><br>
+                <span class="text-muted mt-3">点击评价</span><br>
+                <a href="https://www.wjx.cn/jq/48577240.aspx">
+                    <button type="button" class="btn btn-outline-secondary mt-5 rounded-0">填写反馈意见</button>
+                </a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <span class="text-muted mt-3">官方邮箱:</span>
+                <span class="text-muted">hnpxyj@163.com</span><br>
+            </div>
+        </div>
+    </main>
+    <script>
+        layui.use(['rate'], function () {
+            var rate = layui.rate;
+            //基础效果
+            rate.render({
+                elem: '#test1'
+            })
+        });
+    </script>
+    <!-- jQuery文件-->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <!-- 用于弹窗、提示、下拉菜单 -->
+    <script src="../js/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

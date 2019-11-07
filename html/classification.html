@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>分类</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../icon/icon_Bootstrap_title.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/classification.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <!-- jQuery文件-->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/exitApp.js"></script>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <!--导航条-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <img src="../icon/icon_Bootstrap_logo.png" alt="">
+            <span class="text-light ml-3">分类</span>
+            <!--移动端导航栏隐藏显示按钮-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--导航链接-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classification.html">分类</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">课程表</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my.html">我的</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <br>
+            <!---->
+            <div class="row m-defined-t">
+                <div class="col-4 border border-bottom-0 border-right-0">
+                    <div class="nav flex-column text-center m-defined font_defined" id="v-pills-tab" role="tablist"
+                        aria-orientation="vertical">
+                        <a class="nav-link active border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="v-pills-home-tab" data-toggle="pill" href="#01" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true">
+                            HTML+CSS
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="v-pills-profile-tab" data-toggle="pill" href="#02" role="tab"
+                            aria-controls="v-pills-profile" aria-selected="false">
+                            JavaScript
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="v-pills-messages-tab" data-toggle="pill" href="#03" role="tab"
+                            aria-controls="v-pills-messages" aria-selected="false">
+                            jQuery
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="v-pills-messages-tab" data-toggle="pill" href="#04" role="tab"
+                            aria-controls="v-pills-messages" aria-selected="false">
+                            响应式开发
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="v-pills-settings-tab" data-toggle="pill" href="#05" role="tab"
+                            aria-controls="v-pills-settings" aria-selected="false">
+                            AJAX/HTTP
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="1" data-toggle="pill" href="#06" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            ES6
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="1" data-toggle="pill" href="#07" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            Vue
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="1" data-toggle="pill" href="#08" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            React
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="1" data-toggle="pill" href="#09" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            Angular
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="1" data-toggle="pill" href="#10" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            Git
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="1" data-toggle="pill" href="#11" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            webpack
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="1" data-toggle="pill" href="#12" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            node.js
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="1" data-toggle="pill" href="#13" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            微信小程序
+                        </a>
+                        <a class="nav-link border border-top-0 border-left-0 border-right-0 font_defined defined-bg"
+                            id="1" data-toggle="pill" href="#14" role="tab" aria-controls="v-pills-settings"
+                            aria-selected="false">
+                            MORE···
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8 border">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="01" role="tabpanel"
+                            aria-labelledby="v-pills-home-tab">
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">HTML教程</button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">HTML5</button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">CSS教程</button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">CSS3</button>
+                        </div>
+                        <div class="tab-pane fade" id="02" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                JavaScript教程
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                JS函数
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                JS HTML DOM
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                JS高级教程
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                JS浏览器DOM
+                            </button>
+                        </div>
+                        <div class="tab-pane fade" id="03" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                jQuery教程
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                jQuery效果
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                jQuery HTML
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                jQuery 遍历
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                jQuery Ajax
+                            </button>
+                        </div>
+                        <div class="tab-pane fade" id="04" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <a href="https://www.bootcss.com">
+                                <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                    Bootsrap
+                                </button>
+                            </a>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                jQueryMobile
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                移动端开发
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                Foundation
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary rounded-0 mt-2 ml-2">
+                                Less Framework
+                            </button>
+                        </div>
+                        <div class="tab-pane fade" id="05" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="mt-2 hint-box text-center">
+                                <div class="mt-1 mb-1">抱歉：AJAX/HTTP暂未编辑</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="06" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="mt-2 hint-box text-center">
+                                <div class="mt-1 mb-1">抱歉：ES6暂未编辑</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="07" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="mt-2 hint-box text-center">
+                                <div class="mt-1 mb-1">抱歉：Vue暂未编辑</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="08" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="mt-2 hint-box text-center">
+                                <div class="mt-1 mb-1">抱歉：React暂未编辑</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="09" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="mt-2 hint-box text-center">
+                                <div class="mt-1 mb-1">抱歉：Angular暂未编辑</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="10" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="mt-2 hint-box text-center">
+                                <div class="mt-1 mb-1">抱歉：Git暂未编辑</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="11" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="mt-2 hint-box text-center">
+                                <div class="mt-1 mb-1">抱歉：Webpack暂未编辑</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="12" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="mt-2 hint-box text-center">
+                                <div class="mt-1 mb-1">抱歉：node.js暂未编辑</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="13" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="mt-2 hint-box text-center">
+                                <div class="mt-1 mb-1">抱歉：微信小程序 暂未编辑</div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="14" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <div class="mt-2 hint-box text-center">
+                                <div class="mt-1 mb-1">抱歉：Loading···</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--返回顶部按钮-->
+            <div id="gotop">
+                <div class="border bg-white">
+                    <img src="icon/icon-go-top2.png">
+                </div>
+            </div>
+            <!---->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!---->
+        </div>
+    </main>
+    <footer class="fixed-bottom nav-justified fonter-border bg-white footer-hidden" id="one">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="../index.html">
+                    <span><img src="../icon/icon_index.png" alt=""></span><br>
+                    <span class="footer-text">首页</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="classification.html">
+                    <span><img src="../icon/icon_classification_active.png" alt=""></span><br>
+                    <span class="footer-text-active">分类</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="courses.html">
+                    <span><img src="../icon/icon_courses.png" alt=""></span><br>
+                    <span class="footer-text">课程表</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="my.html">
+                    <span><img src="../icon/icon_my.png" alt=""></span><br>
+                    <span class="footer-text">我的</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="../js/all.js"></script>
+    <!-- jQuery文件-->
+    <script src="../css/"></script>
+    <!-- 用于弹窗、提示、下拉菜单 -->
+    <script src="../js/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

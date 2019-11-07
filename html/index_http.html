@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>状态码</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../icon/icon_Bootstrap_title.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index_http.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <script src="../js/exitApp.js"></script>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <!--导航条-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a href="../index.html">
+                <img src="../icon/icon_index_active2.png" alt="">
+            </a>
+            <span class="text-light ml-3">状态码</span>
+            <!--移动端导航栏隐藏显示按钮-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--导航链接-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MORE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">
+                                Menu1
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Menu2
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Menu3
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Menu1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Menu2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Menu3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <br>
+            <!--搜索框-->
+            <div class="form-inline">
+                <input class="rounded-left input-defined text-muted" type="tel" placeholder="输入状态码" id="http_input">
+                <button class="btn btn-info ml-2" id="search-show">
+                    <img src="../icon/icon_search.png">
+                </button>
+                <button class="btn btn-info ml-2" id="classify-show">
+                    <img src="../icon/icon_http_menu.png">
+                </button>
+            </div>
+            <!--状态码列表-->
+            <div class="mt-3 ">
+                <!--搜索并显示状态码-->
+                <div class="container border text-center" id="search-hide">
+                    <img src="../icon/icon_http_erro.png" class="mt-2" id="http-Img"><br>
+                    <span class="http-Num" id="http-Num">404</span><br>
+                    <span class="http-En" id="http-En">No Found</span><br>
+                    <span class="http-Ch" id="http-Ch">服务器无法根据客户端的请求找到资源（网页）。通过此代码，网站设计人员可设置"您所请求的资源无法找到"的个性页面</span>
+                </div>
+                <!--搜索状态码错误-->
+                <div class="container border bg-gradual rounded text-center text-white" id="search-error-hide">
+                    <img src="../icon/icon_error_face2.png" class="mt-3"><br>
+                    <span class="http-search-hint mb-3" id="hint">无此状态码</span><br>
+                    <br>
+                </div>
+                <!--显示状态码分类-->
+                <div class="container text-center text-muted border mt-2" id="classify-hide">
+                    <div class="row border border-left-0 border-right-0 border-top-0 bg-eee">
+                        <div class="col-4">
+                            <strong>分类</strong>
+                        </div>
+                        <div class="col-8">
+                            <strong>分类描述</strong>
+                        </div>
+                    </div>
+                    <div class="row border border-left-0 border-right-0 border-top-0">
+                        <div class="col-4 m-auto mt-1 mb-1">
+                            <span>1**</span>
+                        </div>
+                        <div class="col-8 m-auto">
+                            <span><strong class="text-dark">信息</strong>，服务器收到请求，需要请求者继续执行操作</span>
+                        </div>
+                    </div>
+                    <div class="row border mt-1 mb-1 border-left-0 border-right-0 border-top-0">
+                        <div class="col-4 m-auto">
+                            <span>2**</span>
+                        </div>
+                        <div class="col-8 m-auto">
+                            <span><strong class="text-dark">成功</strong>，操作被成功接收并处理</span>
+                        </div>
+                    </div>
+                    <div class="row border mt-1 mb-1 border-left-0 border-right-0 border-top-0">
+                        <div class="col-4 m-auto">
+                            <span>3**</span>
+                        </div>
+                        <div class="col-8 m-auto">
+                            <span><strong class="text-dark">重定向</strong>，需要进一步的操作以完成请求</span>
+                        </div>
+                    </div>
+                    <div class="row border mt-1 mb-1 border-left-0 border-right-0 border-top-0">
+                        <div class="col-4 m-auto">
+                            <span>4**</span>
+                        </div>
+                        <div class="col-8 m-auto">
+                            <span><strong class="text-dark">客户端错误</strong>，请求包含语法错误或无法完成请求</span>
+                        </div>
+                    </div>
+                    <div class="row border-0 mt-1 mb-1">
+                        <div class="col-4 m-auto">
+                            <span>5**</span>
+                        </div>
+                        <div class="col-8 m-auto">
+                            <span><strong class="text-dark">服务器错误</strong>，服务器在处理请求的过程中发生了错误</span>
+                        </div>
+                    </div>
+                </div>
+                <!--更多状态码列表-->
+                <span class="clearfix mt-3 text-muted">
+                    <span class="float-left">常见状态码</span>
+                    <span class="float-right">
+                        <a href="https://www.runoob.com/http/http-status-codes.html">
+                            <img src="../icon/icon_more_02.png">
+                        </a>
+                    </span>
+                </span>
+                <!--状态码列表-->
+                <div class="container text-muted">
+                    <div class="row text-center border">
+                        <div class="col-4 mt-1 mb-1">
+                            <strong>状态码</strong>
+                        </div>
+                        <div class="col-4 mt-1 mb-1">
+                            <strong>英文名称</strong>
+                        </div>
+                        <div class="col-4 mt-1 mb-1">
+                            <strong>中文描述</strong>
+                        </div>
+                    </div>
+                    <!--100-->
+                    <div class="row mt-2 text-center bg-white" type="button" data-toggle="modal" data-target="#100">
+                        <div class="col-4 m-auto">100</div>
+                        <div class="col-4 m-auto">Continue</div>
+                        <div class="col-4 http-introduce">继续。客户端应继续其请求</div>
+                    </div>
+                    <!-- 模态框 100-->
+                    <div class="modal fade" id="100">
+                        <div class="modal-dialog modal-dialog-centered text-dark">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="../icon/icon_http_message.png">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <h1 class="modal-title">100</h1>
+                                    <h3>Continue</h3>
+                                    <h4>继续。客户端应继续其请求</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--200-->
+                    <div class="row mt-2 text-center bg-white" type="button" data-toggle="modal" data-target="#200">
+                        <div class="col-4 m-auto">200</div>
+                        <div class="col-4 m-auto">OK</div>
+                        <div class="col-4 http-introduce">请求成功。一般用于GET与POST请求</div>
+                    </div>
+                    <!-- 模态框 200-->
+                    <div class="modal fade" id="200">
+                        <div class="modal-dialog modal-dialog-centered text-dark">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="../icon/icon_http_success.png">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <h1 class="modal-title">200</h1>
+                                    <h3>OK</h3>
+                                    <h4>请求成功。一般用于GET与POST请求</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--301-->
+                    <div class="row text-center bg-white mt-2" type="button" data-toggle="modal" data-target="#301">
+                        <div class="col-4 m-auto">301</div>
+                        <div class="col-4 m-auto">Moved Permanently</div>
+                        <div class="col-4 http-introduce">资源（网页等）被永久转移到其它URL</div>
+                    </div>
+                    <!-- 模态框 301-->
+                    <div class="modal fade" id="301">
+                        <div class="modal-dialog modal-dialog-centered text-dark">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="../icon/icon_http_refresh.png">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <h1 class="modal-title">301</h1>
+                                    <h3>Moved Permanently</h3>
+                                    <h4>多种选择。请求的资源可包括多个位置，相应可返回一个资源特征与地址的列表用于用户终端（例如：浏览器）选择</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--404-->
+                    <div class="row text-center bg-white mt-2" type="button" data-toggle="modal" data-target="#404">
+                        <div class="col-4 m-auto">404</div>
+                        <div class="col-4 m-auto">Not Found</div>
+                        <div class="col-4 http-introduce">请求的资源（网页等）不存在</div>
+                    </div>
+                    <!-- 模态框 404-->
+                    <div class="modal fade" id="404">
+                        <div class="modal-dialog modal-dialog-centered text-dark">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="../icon/icon_http_client.png">
+                                    <img src="../icon/icon_http_erro.png" class="ml-auto">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <h1 class="modal-title">404</h1>
+                                    <h3>Not Found</h3>
+                                    <h4>服务器无法根据客户端的请求找到资源（网页）。通过此代码，网站设计人员可设置"您所请求的资源无法找到"的个性页面</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--500-->
+                    <div class="row text-center bg-white mt-2" type="button" data-toggle="modal" data-target="#500">
+                        <div class="col-4 m-auto">500</div>
+                        <div class="col-4 m-auto">Internal Server Error</div>
+                        <div class="col-4 http-introduce">服务器内部错误，无法完成请求</div>
+                    </div>
+                    <!-- 模态框 500-->
+                    <div class="modal fade" id="500">
+                        <div class="modal-dialog modal-dialog-centered text-dark">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="../icon/icon_http_server.png">
+                                    <img src="../icon/icon_http_erro.png" class="ml-auto">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <h1 class="modal-title">500</h1>
+                                    <h3>Internal Server Error</h3>
+                                    <h4>服务器内部错误，无法完成请求</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/index_http.js"></script>
+    <script src="../js/all.js"></script>
+    <!-- 用于弹窗、提示、下拉菜单 -->
+    <script src="../js/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

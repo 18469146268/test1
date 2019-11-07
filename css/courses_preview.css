@@ -1,0 +1,13 @@
+body{
+    background-color: #f6f6f6;
+}
+a:hover{
+    text-decoration: none;
+}
+.border-defined{
+    border: 1px solid #f6f6f6;
+}
+
+.textareaCode_input,.textareaCode_out{
+    min-height:300px;
+}

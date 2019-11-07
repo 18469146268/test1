@@ -1,0 +1,134 @@
+/*鼠标悬停div上移*/
+.colour_box:hover{
+    animation: move 0.5s ease;
+}
+@keyframes move {
+    0% {
+        transform: translateY(25px);
+    }
+   
+}
+/*复制缩放*/
+.click-copy:active {
+    transform: scale(1.2);
+}
+/*
+*0-
+*/
+.bg-1 {
+    background-image: linear-gradient(50deg, #43cea2, #185a9d);
+}
+.bg-2 {
+    background-image: linear-gradient(50deg, #ffa17f, #00223e);
+}
+.bg-3 {
+    background-image: linear-gradient(50deg, #360033, #0b8793);
+}
+.bg-4 {
+    background-image: linear-gradient(50deg, #948e99, #2e1437);
+}
+.bg-5 {
+    background-image: linear-gradient(50deg, #1e130c, #9a8478);
+}
+.bg-6 {
+    background-image: linear-gradient(50deg, #d38312, #a83279);
+}
+.bg-7 {
+    background-image: linear-gradient(50deg, #73c8a9, #373b44);
+}
+.bg-8 {
+    background-image: linear-gradient(50deg, #abbaab, #ffffff);
+}
+.bg-9 {
+    background-image: linear-gradient(50deg, #fdfc47, #24fe41);
+}
+/*
+*1-
+*/
+.bg-10 {
+    background-image: linear-gradient(50deg, #83a4d4, #b6fbff);
+}
+.bg-11 {
+    background-image: linear-gradient(50deg, #DE6262, #FFB8BC);
+}
+.bg-12 {
+    background-image: linear-gradient(50deg, #FFEEEE, #DDEFBB);
+}
+.bg-13 {
+    background-image: linear-gradient(50deg, #50C9C3, #96DEDA);
+}
+.bg-14 {
+    background-image: linear-gradient(50deg, #616161, #9BC5C3);
+}
+.bg-15 {
+    background-image: linear-gradient(50deg, #DDD6F3, #FAACA8);
+}
+.bg-16 {
+    background-image: linear-gradient(50deg, #5D4157, #A8CABA);
+}
+.bg-17 {
+    background-image: linear-gradient(50deg, #E6DADA, #274046);
+}
+.bg-18 {
+    background-image: linear-gradient(50deg, #F2709C, #FF9472);
+}
+.bg-19 {
+    background-image: linear-gradient(50deg, #DAD299, #B0DAB9);
+}
+.bg-20 {
+    background-image: linear-gradient(50deg, #D3959B, #BFE6BA);
+}
+/*
+*2-
+*/
+.bg-21 {
+    background-image: linear-gradient(50deg, #485563, #29323C);
+}
+.bg-22 {
+    background-image: linear-gradient(50deg, #FE8C00, #F83600);
+}
+.bg-23 {
+    background-image: linear-gradient(50deg, #00C6FF, #0072FF);
+}
+.bg-24 {
+    background-image: linear-gradient(50deg, #70E1F5, #FFD194);
+}
+.bg-25 {
+    background-image: linear-gradient(50deg, #556270, #FF6B6B);
+}
+.bg-26 {
+    background-image: linear-gradient(50deg, #B3FFAB, #12FFF7);
+}
+.bg-27 {
+    background-image: linear-gradient(50deg, #00D2FF, #3A7BD5);
+}
+.bg-28 {
+    background-image: linear-gradient(50deg, #AAFFA9, #11FFBD);
+}
+.bg-29 {
+    background-image: linear-gradient(50deg, #000000, #E74C3C);
+}
+/*
+*3-
+*/
+.bg-30 {
+    background-image: linear-gradient(50deg, #F0C27B, #4B1248);
+}
+.bg-31 {
+    background-image: linear-gradient(50deg, #FF4E50, #F9D423);
+}
+.bg-32 {
+    background-image: linear-gradient(50deg, #606C88, #3F4C66);
+}
+.bg-33 {
+    background-image: linear-gradient(50deg, #C9FFBF, #FFAFBD);
+}
+.bg-34 {
+    background-image: linear-gradient(50deg, #649173, #DBD5A4);
+}
+.bg-35 {
+    background-image: linear-gradient(50deg, #FC354C, #0abfbc);
+}
+.bg-36 {
+    background-image: linear-gradient(50deg, #EC6F66, #F3A183);
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>我的</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="../icon/icon_Bootstrap_title.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/my.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <!--layui——评分-->
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../layui/layui.js"></script>
+    <script src="../js/exitApp.js"></script>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <!--导航条-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <img src="../icon/icon_Bootstrap_logo.png" alt="">
+            <span class="text-light ml-3">我的</span>
+            <!--移动端导航栏隐藏显示按钮-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--导航链接-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classification.html">分类</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">课程表</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my.html">我的</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <!--头像、登录/注册、消息-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="text-center mt-3 mb-3 header_box">
+                            <a href="#">
+                                <img src="../icon/icon_header.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-9 mt-3 clearfix">
+                        <a href="my_login.html">
+                            <span class="float-left mt-1 header_box_font">
+                                登录/注册
+                            </span>
+                        </a>
+                        <a href="#">
+                            <span class="float-right mt-1">
+                                <img src="../icon/icon_new.png">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--分割线-->
+            <div class="parting_line"></div>
+            <!--订单管理、下载管理、收藏-->
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <a href="#">
+                            <img src="../icon/icon_order.png"><br>
+                        </a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="#">
+                            <img src="../icon/icon_download.png"><br>
+                        </a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a href="#">
+                            <img src="../icon/icon_collect.png"><br>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-4 text-center">
+                        <span class="mt-5">订单管理</span>
+                    </div>
+                    <div class="col-4 text-center">
+                        <span class="mt-5">下载管理</span>
+                    </div>
+                    <div class="col-4 text-center">
+                        <span class="mt-5">收藏</span>
+                    </div>
+                </div>
+            </div>
+            <!--检测更新、帮助与反馈、关于我们-->
+            <div class="mt-4">
+                <div class="list-group">
+                    <a href="my_checkUpdate.html"
+                        class="list-group-item text-dark border-top-0 border-left-0 border-right-0 rounded-0 clearfix">
+                        <span class="float-left mt-1 list-group-item-font">检测更新</span>
+                        <img class="float-right mt-1" src="../icon/icon_next_sm.png">
+                        <span class="badge badge-pill badge-bg-f74c32 text-white float-right mt-1 mr-2">New</span>
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="my_helpFeedback.html"
+                        class="list-group-item text-dark border-top-0 border-left-0 border-right-0 rounded-0 clearfix">
+                        <span class="float-left mt-1 list-group-item-font">帮助与反馈</span>
+                        <img class="float-right mt-1" src="../icon/icon_next_sm.png">
+                    </a>
+                </div>
+                <div class="list-group">
+                    <a href="my_aboutUs.html"
+                        class="list-group-item text-dark border-top-0 border-left-0 border-right-0 rounded-0 clearfix">
+                        <span class="float-left mt-1 list-group-item-font">关于我们</span>
+                        <img class="float-right mt-1" src="../icon/icon_next_sm.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="fixed-bottom nav-justified fonter-border bg-white footer-hidden" id="one">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="../index.html">
+                    <span><img src="../icon/icon_index.png" alt=""></span><br>
+                    <span class="footer-text">首页</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="classification.html">
+                    <span><img src="../icon/icon_classification.png" alt=""></span><br>
+                    <span class="footer-text">分类</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="courses.html">
+                    <span><img src="../icon/icon_courses.png" alt=""></span><br>
+                    <span class="footer-text">课程表</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link rounded-0" href="my.html">
+                    <span><img src="../icon/icon_my_active.png" alt=""></span><br>
+                    <span class="footer-text-active">我的</span>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="../js/all.js"></script>
+    <!-- jQuery文件-->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <!-- 用于弹窗、提示、下拉菜单 -->
+    <script src="../js/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

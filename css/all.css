@@ -1,0 +1,103 @@
+
+body {
+    font-family: '微软雅黑';
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #777777;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #777777;
+}
+
+.fonter-border {
+    border-top: 1px solid #979797;
+}
+
+.footer-text {
+    color: #777777;
+}
+
+.footer-text-active {
+    color: #24b8ff;
+}
+
+/*分割线*/
+.parting_line {
+    border-bottom: 0.5px solid #eee;
+}
+
+/*介绍内容：超出2行自动隐藏*/
+.introduce {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/*http状态码内容：超出3行自动隐藏*/
+.http-introduce {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+/*鼠标悬停阴影*/
+.box-shadow:hover {
+    background: #fff;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0px 0px 15px #777777;
+}
+
+/*免费*/
+.free-font {
+    color: #ff6600;
+}
+
+/*自定义字体颜色:介绍*/
+.defined-font {
+    color: #a6a6a6;
+}
+
+/*移动端时显示底部导航*/
+.footer-hidden {
+    display: block;
+}
+
+/*行内块元素*/
+.inline_elements {
+    display: inline-block;
+}
+
+.shadow-delete:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px #ccc;
+}
+
+
+/*教材实例讲解*/
+.text-2em {
+    text-indent: 2em
+}
+
+/*提示框*/
+.hint-box {
+    color: #6c6c6c;
+    border: 1px solid #ffb4a8;
+    background-color: #fef2f2;
+}
+
+/*返回顶部图标*/
+#gotop {
+    position: fixed;
+    bottom: 100px;
+    right: 17px;
+    display: none;
+}

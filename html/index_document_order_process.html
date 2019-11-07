@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>一家专做文档的网站</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../icon/icon_Bootstrap_title.png">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index_document_order_process.css">
+    <script src="../js/exitApp.js"></script>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <!--导航条-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a href="index_document.html">
+                <img src="../icon/icon_index_active2.png" alt="">
+            </a>
+            <span class="text-light ml-3">文档</span>
+            <!--移动端导航栏隐藏显示按钮-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--导航链接-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MORE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">
+                                Menu1
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Menu2
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Menu3
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Menu1
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Menu2
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Menu3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container mt-5">
+            <br>
+            <div class="row mt-3">
+                <div class="col-sm-4 border text-center bg-defined">
+                    <div class="text-white">
+                        <img class="mt-4" src="../icon/icon_information collection.png">
+                        <h3 class="mt-2">NO.1</h3>
+                        <h4>下单并填写资料采集表</h4>
+                        <h1>-</h1>
+                    </div>
+                </div>
+                <div class="col-sm-4 border text-center bg-defined">
+                    <div class="text-white">
+                        <img class="mt-4" src="../icon/icon_one_to_one.png">
+                        <h3 class="mt-2">NO.2</h3>
+                        <h4>一对一沟通，选择简历样式</h4>
+                        <h1>--</h1>
+                    </div>
+                </div>
+                <div class="col-sm-4 border text-center bg-defined">
+                    <div class="text-white">
+                        <img class="mt-4" src="../icon/icon_begin.png">
+                        <h3 class="mt-2">NO.3</h3>
+                        <h4>确认无误后，简历制作开始</h4>
+                        <h1>---</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-4 border text-center bg-defined">
+                    <div class="text-white">
+                        <img class="mt-4" src="../icon/icon_finish.png">
+                        <h3 class="mt-2">NO.4</h3>
+                        <h4>形成初稿，进行沟通并修改</h4>
+                        <h1>----</h1>
+                    </div>
+                </div>
+                <div class="col-sm-4 border text-center bg-defined">
+                    <div class="text-white">
+                        <img class="mt-4" src="../icon/icon_check.png">
+                        <h3 class="mt-2">NO.5</h3>
+                        <h4>客户审核，确认无误后形成终稿</h4>
+                        <h1>-----</h1>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 border text-center bg-defined">
+                    <div class="text-white">
+                        <img class="mt-4" src="../icon/icon_send.png">
+                        <h3 class="mt-2">NO.6</h3>
+                        <h4>发送电子版（WORD、PDF)</h4>
+                        <h1>------</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <button type="button" class="btn btn-info rounded-0 btn-lg" data-toggle="modal" data-target="#submit">
+                    立即制作
+                </button>
+            </div>
+            <!--模态框-->
+            <div class="modal fade" id="submit">
+                <div class="modal-dialog modal-dialog-centered text-dark">
+                    <div class="modal-content">
+                        <div class="modal-header clearfix">
+                            <span>添加简历小助手：QQ/微信</span>
+                            <button type="button" class="close float-right" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <img src="../img/img_qq_qrcode2.png">
+                            <img src="../img/img_wechat_qrcode.png"><br>
+                            <button type="button" class="btn btn-info rounded-0 mt-3">
+                                <a href="https://www.wjx.top/jq/41126409.aspx" class="text-white">填写简历信息</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+        </div>
+        <br>
+        <br>
+        <br>
+    </main>
+    <!-- jQuery文件-->
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="../js/popper.min.js"></script>
+</body>
+
+</html>
